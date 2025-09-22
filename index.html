@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyber Awareness Hub — Empowering Students</title>
+  <meta name="description" content="Cyber Awareness Hub — simple, practical cybersecurity training and tips for students." />
+  <style>
+    :root{--accent:#0b76ef;--muted:#6b7280;--bg:#0f1724;--card:#0b1220}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;smooth-font-smoothing:antialiased;margin:0;background:linear-gradient(180deg,#071025 0%, #071827 60%);color:#e6eef8}
+    .container{max-width:1100px;margin:48px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7bd389);display:flex;align-items:center;justify-content:center;font-weight:700;color:#06233a}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;margin-top:28px}
+    .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .feature .dot{width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center;font-weight:700}
+    ul.benefits{margin:12px 0 0;padding-left:18px;color:var(--muted)}
+    .cta-btn{display:inline-block;background:var(--accent);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    form input, form textarea{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    form .small{font-size:13px;color:var(--muted);margin-top:8px}
+    .testimonials{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    .testimonial{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:14px;border-radius:10px}
+    footer{margin-top:36px;color:var(--muted);font-size:13px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    .pill{display:inline-block;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:999px;font-weight:600}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;padding-bottom:8px}.testimonials{grid-template-columns:1fr}.features{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">CA</div>
+        <div>
+          <div style="font-weight:700">Cyber Awareness Hub</div>
+          <div style="font-size:13px;color:var(--muted)">Empowering Students to Stay Safe Online</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="card">
+          <h1>Simple, Practical Cybersecurity for Students</h1>
+          <p class="lead">Cyber threats are increasing. Cyber Awareness Hub gives students easy resources, interactive training, and real tips to protect themselves online.</p>
+
+          <div class="features" id="features">
+            <div class="feature">
+              <div class="dot">1</div>
+              <div>
+                <strong>Interactive Workshops</strong>
+                <div class="small" style="color:var(--muted)">Live sessions, case studies and real attack examples.</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">2</div>
+              <div>
+                <strong>Online Resource Library</strong>
+                <div class="small" style="color:var(--muted)">Quick guides, checklists and cyber hygiene tips.</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">3</div>
+              <div>
+                <strong>Gamified Quizzes</strong>
+                <div class="small" style="color:var(--muted)">Fun challenges to test knowledge and build good habits.</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">4</div>
+              <div>
+                <strong>Incident Awareness</strong>
+                <div class="small" style="color:var(--muted)">Learn how to recognise and respond to phishing and scams.</div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="benefits">
+            <li><strong>Simple & Practical</strong> — No technical jargon.</li>
+            <li><strong>Good Habits</strong> — Build lasting safe behaviour.</li>
+            <li><strong>Career Skills</strong> — Prepare for cybersecurity roles.</li>
+          </ul>
+
+          <p style="margin-top:14px"><a class="cta-btn" href="#signup">Sign up for free tips</a></p>
+        </div>
+
+        <section style="margin-top:18px">
+          <h3 id="testimonials">What students and lecturers say</h3>
+          <div class="testimonials">
+            <div class="testimonial">
+              “This program changed how I think about online safety. I feel more confident now when using social media.” — <em>University Student</em>
+            </div>
+            <div class="testimonial">
+              “Cyber Awareness Hub is practical and useful for students. It should be part of every course.” — <em>Lecturer, Deakin University</em>
+            </div>
+            <div class="testimonial">
+              “A strong initiative that helps young people stay safe online.” — <em>Cybersecurity Professional</em>
+            </div>
+            <div class="testimonial">
+              <div style="font-weight:700">Pilot Program</div>
+              Join our pilot for interactive workshops and give feedback to shape the project.
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <div style="font-size:15px;font-weight:700">Join the Pilot / Get Free Tips</div>
+          <p class="small" style="margin-top:6px">Sign up and we’ll send weekly practical tips, event invites, and workshop schedules.</p>
+
+          <form id="signup" action="#" onsubmit="handleSubmit(event)">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+            <label for="email" style="margin-top:8px">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="role" style="margin-top:8px">I am a</label>
+            <input id="role" name="role" type="text" placeholder="Student / Teacher / Other" />
+
+            <div style="display:flex;gap:8px;margin-top:10px">
+              <button class="cta-btn" type="submit" style="border:none;cursor:pointer">Get Tips</button>
+              <a class="pill" href="#contact" style="text-decoration:none">Contact Us</a>
+            </div>
+
+            <div class="small">We will never sell your data. By signing up you agree to receive project updates.</div>
+          </form>
+
+          <script>
+            function handleSubmit(e){
+              e.preventDefault();
+              const name = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              // Placeholder behaviour: create a mailto so the user can test quickly.
+              const subject = encodeURIComponent('Signup: Cyber Awareness Hub');
+              const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nFrom landing page`);
+              window.location.href = `mailto:cyberawarenesshub@studentproject.com?subject=${subject}&body=${body}`;
+            }
+          </script>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="card" id="contact">
+          <div style="font-weight:700">Contact & Project</div>
+          <div class="small" style="margin-top:8px">Student: Ankita — Student ID: s224860779</div>
+          <div class="small">Unit: SIT726</div>
+          <div style="margin-top:8px">📧 <a href="mailto:cyberawarenesshub@studentproject.com" style="color:var(--accent);text-decoration:none">cyberawarenesshub@studentproject.com</a></div>
+          <div style="margin-top:10px;color:var(--muted);font-size:13px">Future: mobile app with AI tips, real-time alerts and personalised learning paths.</div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div class="card" style="padding:12px;display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <strong>Cyber Awareness Hub</strong>
+          <div style="color:var(--muted);font-size:13px">Empowering Students to Stay Safe in the Digital World</div>
+        </div>
+        <div style="text-align:right;color:var(--muted);font-size:13px">© Student Project — Ankita (s224860779)</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>   
